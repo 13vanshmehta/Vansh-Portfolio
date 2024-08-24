@@ -1,0 +1,15 @@
+.Container-Footer {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    align-items: center;
+}
+
+.Footer-Heading {
+    padding-top: 30PX;
+}
+
+.Logo-Text{
+    font-size: 1.6rem;
+    color: #DDB748;
+}
+

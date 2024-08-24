@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* <--------------------------- Base Styles --------------------------> */
+
+.Container {
+  max-width: 140rem;
+  padding: 1.9rem 4.4rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 6.4rem;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* <--------------------------- Home Page Styles --------------------------> */
+.Container-Home {
+  max-width: 150rem;
+  height: 38rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 59px;
+  background-image: url(assets/My-Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 640px;
+}
+
+.Highlight{
+  font-size: 40px;
+  color: #DDB748;
+}
+
+.Highlight-Para{
+  font-size: 30px;
+  color: #DDB748;
+}
+
+.Highlight-Text {
+  color: #DDB748;
+}
+
+.Home-Left {
+  max-width: 600px;
+  padding-top: 70px;
+}
+
+.Home-Left p {
+  padding-top: 3px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.Home-Left button{
+  padding: 17px;
+  margin-top: 10px;
+}
+
+.Home-Left button span {
+  font-size: 18px;
+}
+
+.Button-Home {
+  background-color: #DDB748;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Button-Home:hover {
+  background-color: #f5df9f;
+}
+
+
+.Home-Right .About-Me,
+.Home-Right .My-Work,
+.Home-Right .Follow-Me {
+  margin-bottom: 30px;
+}
+
+.About-Me h3,
+.My-Work h3,
+.Follow-Me h3 {
+  display: inline-block;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+}
+
+.Home-Right p{
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
+.button-01 {
+  background: none;
+  border: none;
+  color: #DDB748;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+.button-01::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #DDB748;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.button-01:hover {
+  color: #f5df9f;
+}
+
+.button-01:hover::after {
+  transform: scale(1);
+}
+
+.button-01:focus {
+  outline: none;
+}
+
+.Home-Right {
+  max-width: 450px;
+}
+
+.Follow-Me h3{
+  margin-bottom: 10px;
+}
+
+.Follow-Me a {
+  padding-right: 5px;
+}
+
+
+
+
+/* <--------------------------- About Page Styles --------------------------> */
+
+.Title-About {
+  display: inline-block;
+  border-bottom: 4px solid #fff;
+  color: #DDB748;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+  margin-bottom: 10px;
+}
+
+.Content-Right {
+  background-color: #f5df9f;
+  padding: 20px;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.About-Me-Pic {
+  height: 500px;
+  width: 500px;
+  display: block;
+  /* margin: 0 auto; */
+  /* padding-left: 50px; */
+}
+
+/* <--------------------------- Portfolio Page Styles --------------------------> */
+
+.Search-Input {
+  padding: 10px;
+  border: none;
+  margin-left: 50rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.Search-Input:hover {
+  transform: scale(1.1);
+}
+
+.Portfolio {
+  margin-left: 80px;
+}
+
+.Project-Display {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.Display-Card{
+  border: 1px solid #DDB748;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  max-width: 400px;
+  margin: 20px;
+  height: 450px;
+}
+
+.Display-Card:hover {
+  transform: scale(1.03);
+}
+
+.Project-Image {
+  height: auto;
+  width: 100%;
+}
+
+.Project-Content {
+  padding: 10px;
+}
+
+.Project-Content h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: #DDB748;
+}
+
+.Project-Content p {
+  margin: 3px 0;
+  color: #f5df9f;
+}
+
+
+
+
+
+
+
+
+
+/* <--------------------------- Contact-Us Page Styles --------------------------> */
+.Contact-Right img{
+  /* padding-top: 45px; */
+  padding-left: 20px;
+}
+
+.Contact-Para {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+
+.Contact-Form {
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+  }
+  & label {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  & input,
+  textarea {
+    width: 80%;
+    padding: 10px 20px;
+  }
+}
+
+/* <--------------------------- Pages Page Styles --------------------------> */
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
